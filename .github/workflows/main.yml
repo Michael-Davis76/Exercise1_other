@@ -7,7 +7,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - id: foo
-              uses: Michael-Davis76/Exercise1/composite@v1
+              uses: Michael-Davis76/Exercise1/composite@v2
               with:
                 who-to-greet: 'Mona the Octocat'
             - run: echo random-number "$RANDOM_NUMBER"
