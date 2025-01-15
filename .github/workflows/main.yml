@@ -14,3 +14,8 @@ jobs:
               shell: bash
               env:
                 RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
+    # caller workflow job for reusable workflow
+    call-workflow-passing-data:
+        uses: Michael-Davis76/Exercise1/.github/workflows/reusable.yml@main
+        with:
+            config-path: "my man it worked!"
